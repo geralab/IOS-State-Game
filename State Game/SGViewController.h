@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "State.h"
 @interface SGViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
+@property (nonatomic,strong) NSString *theUrl;
+@property (nonatomic,strong) NSString *theName;
+@property (nonatomic, strong) SGViewController *sg;
+@property (nonatomic) State *state;
 @end

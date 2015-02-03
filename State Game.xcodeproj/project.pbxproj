@@ -21,6 +21,13 @@
 		3DCFFA251807A21E007ED778 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DCFFA071807A21E007ED778 /* UIKit.framework */; };
 		3DCFFA2D1807A21E007ED778 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DCFFA2B1807A21E007ED778 /* InfoPlist.strings */; };
 		3DCFFA2F1807A21E007ED778 /* State_GameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFFA2E1807A21E007ED778 /* State_GameTests.m */; };
+		3DCFFA3A1807A245007ED778 /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFFA391807A245007ED778 /* State.m */; };
+		3DCFFA3D1808B9DE007ED778 /* StateTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFFA3C1808B9DE007ED778 /* StateTable.m */; };
+		3DFDA394180BDEAE00B0F128 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFDA393180BDEAE00B0F128 /* AVFoundation.framework */; };
+		3DFDA398180BE43E00B0F128 /* STATIC.WAV in Resources */ = {isa = PBXBuildFile; fileRef = 3DFDA396180BE43E00B0F128 /* STATIC.WAV */; };
+		3DFDA399180BE43E00B0F128 /* TIMBALE2.WAV in Resources */ = {isa = PBXBuildFile; fileRef = 3DFDA397180BE43E00B0F128 /* TIMBALE2.WAV */; };
+		3DFDA39B180BE80F00B0F128 /* PAPERCUT.WAV in Resources */ = {isa = PBXBuildFile; fileRef = 3DFDA39A180BE80F00B0F128 /* PAPERCUT.WAV */; };
+		3DFDA39D180BEFAE00B0F128 /* Conga Groove 01.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3DFDA39C180BEFAE00B0F128 /* Conga Groove 01.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,15 @@
 		3DCFFA2A1807A21E007ED778 /* State GameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "State GameTests-Info.plist"; sourceTree = "<group>"; };
 		3DCFFA2C1807A21E007ED778 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3DCFFA2E1807A21E007ED778 /* State_GameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = State_GameTests.m; sourceTree = "<group>"; };
+		3DCFFA381807A245007ED778 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		3DCFFA391807A245007ED778 /* State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
+		3DCFFA3B1808B9DE007ED778 /* StateTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateTable.h; sourceTree = "<group>"; };
+		3DCFFA3C1808B9DE007ED778 /* StateTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateTable.m; sourceTree = "<group>"; };
+		3DFDA393180BDEAE00B0F128 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3DFDA396180BE43E00B0F128 /* STATIC.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = STATIC.WAV; sourceTree = SOURCE_ROOT; };
+		3DFDA397180BE43E00B0F128 /* TIMBALE2.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = TIMBALE2.WAV; sourceTree = SOURCE_ROOT; };
+		3DFDA39A180BE80F00B0F128 /* PAPERCUT.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = PAPERCUT.WAV; sourceTree = SOURCE_ROOT; };
+		3DFDA39C180BEFAE00B0F128 /* Conga Groove 01.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Conga Groove 01.caf"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DFDA394180BDEAE00B0F128 /* AVFoundation.framework in Frameworks */,
 				3DCFFA061807A21E007ED778 /* CoreGraphics.framework in Frameworks */,
 				3DCFFA081807A21E007ED778 /* UIKit.framework in Frameworks */,
 				3DCFFA041807A21E007ED778 /* Foundation.framework in Frameworks */,
@@ -101,6 +118,7 @@
 		3DCFFA021807A21E007ED778 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DFDA393180BDEAE00B0F128 /* AVFoundation.framework */,
 				3DCFFA031807A21E007ED778 /* Foundation.framework */,
 				3DCFFA051807A21E007ED778 /* CoreGraphics.framework */,
 				3DCFFA071807A21E007ED778 /* UIKit.framework */,
@@ -119,6 +137,8 @@
 				3DCFFA191807A21E007ED778 /* SGViewController.m */,
 				3DCFFA1B1807A21E007ED778 /* Images.xcassets */,
 				3DCFFA0A1807A21E007ED778 /* Supporting Files */,
+				3DCFFA381807A245007ED778 /* State.h */,
+				3DCFFA391807A245007ED778 /* State.m */,
 			);
 			path = "State Game";
 			sourceTree = "<group>";
@@ -126,10 +146,13 @@
 		3DCFFA0A1807A21E007ED778 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3DFDA395180BE41E00B0F128 /* Audio */,
 				3DCFFA0B1807A21E007ED778 /* State Game-Info.plist */,
 				3DCFFA0C1807A21E007ED778 /* InfoPlist.strings */,
 				3DCFFA0F1807A21E007ED778 /* main.m */,
 				3DCFFA111807A21E007ED778 /* State Game-Prefix.pch */,
+				3DCFFA3B1808B9DE007ED778 /* StateTable.h */,
+				3DCFFA3C1808B9DE007ED778 /* StateTable.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -150,6 +173,17 @@
 				3DCFFA2B1807A21E007ED778 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DFDA395180BE41E00B0F128 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				3DFDA39C180BEFAE00B0F128 /* Conga Groove 01.caf */,
+				3DFDA39A180BE80F00B0F128 /* PAPERCUT.WAV */,
+				3DFDA396180BE43E00B0F128 /* STATIC.WAV */,
+				3DFDA397180BE43E00B0F128 /* TIMBALE2.WAV */,
+			);
+			name = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +264,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DCFFA1C1807A21E007ED778 /* Images.xcassets in Resources */,
+				3DFDA39D180BEFAE00B0F128 /* Conga Groove 01.caf in Resources */,
+				3DFDA399180BE43E00B0F128 /* TIMBALE2.WAV in Resources */,
+				3DFDA39B180BE80F00B0F128 /* PAPERCUT.WAV in Resources */,
 				3DCFFA0E1807A21E007ED778 /* InfoPlist.strings in Resources */,
+				3DFDA398180BE43E00B0F128 /* STATIC.WAV in Resources */,
 				3DCFFA171807A21E007ED778 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +291,8 @@
 				3DCFFA141807A21E007ED778 /* SGAppDelegate.m in Sources */,
 				3DCFFA1A1807A21E007ED778 /* SGViewController.m in Sources */,
 				3DCFFA101807A21E007ED778 /* main.m in Sources */,
+				3DCFFA3A1807A245007ED778 /* State.m in Sources */,
+				3DCFFA3D1808B9DE007ED778 /* StateTable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +501,7 @@
 				3DCFFA341807A21E007ED778 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DCFFA351807A21E007ED778 /* Build configuration list for PBXNativeTarget "State GameTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +510,7 @@
 				3DCFFA371807A21E007ED778 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
